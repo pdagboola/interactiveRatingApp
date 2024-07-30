@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactive Rating App</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <div class="icon">
+          <img src="/images/icon-star.svg" alt="" />
+        </div>
+        <div class="content">
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with ypur support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="buttons" id="ratings-wrapper">
+          <button class="btn">1</button>
+          <button class="btn">2</button>
+          <button class="btn">3</button>
+          <button class="btn">4</button>
+          <button class="btn">5</button>
+        </div>
+        <div id="submit-btn" onsubmit="">
+          <button class="submit" id="y">SUBMIT</button>
+        </div>
+      </div>
+    </div>
+    <div class="new-container hidden">
+      <img src="/images/illustration-thank-you.svg" alt="" />
+      <div class="thank-you">
+        <div class="selection"><p>You have selected ${ratings} of 5</p></div>
+        <h1>Thank You</h1>
+        <p>
+          We appreciate you taking the time to give a rating, If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
